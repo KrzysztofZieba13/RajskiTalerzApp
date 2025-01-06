@@ -1,0 +1,15 @@
+.confirmBtn {
+  background-color: transparent;
+  font-size: 2.4rem;
+  font-family: inherit;
+  background-color: #219c90;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem;
+  top: -10px;
+  position: absolute;
+}
+
+.confirmBtn svg {
+  height: 4.4rem;
+}

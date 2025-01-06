@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>RajskiTalerz | Restauracja</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "image": [
+          "https://rajskitalerz.pl/menu/breakfast-1.jpg",
+          "https://rajskitalerz.pl/menu/pizza-1.jpg",
+          "https://rajskitalerz.pl/menu/salad-1.jpg"
+        ],
+        "name": "RajskiTalerz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Wincentego Pola 2",
+          "addressLocality": "Rzeszów",
+          "addressRegion": "Podkarpackie",
+          "postalCode": "35-021",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.027046500000935,
+          "longitude": 21.985029192408295
+        },
+        "url": "https://rajskitalerz.pl/",
+        "telephone": "+48123456789",
+        "servesCuisine": ["American", "Polish", "Vegetarian", "Italian"],
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "11:30",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "11:30",
+            "closes": "23:30"
+          }
+        ],
+        "acceptsReservations": "https://www.rajskitalerz.pl/booking",
+        "menu": "https://www.rajskitalerz.pl/menu"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

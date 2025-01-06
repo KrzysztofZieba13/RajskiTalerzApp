@@ -1,0 +1,16 @@
+.orderCartContent {
+  padding: 0.8rem 0 1.6rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.orderCartContentOverflow {
+  overflow-y: scroll;
+  padding: 0.8rem 0 4.6rem 0;
+}
+
+.orderComment {
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  color: #333;
+}

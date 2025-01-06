@@ -1,0 +1,51 @@
+.headerNavList {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.headerNavList li {
+  list-style-type: none;
+  transition: all 0.3s;
+}
+
+.headerNavList a svg {
+  height: 60px;
+  color: #333;
+}
+
+.cartBtn,
+.notificationBtn {
+  position: relative;
+}
+
+.displayQuantity {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  font-size: 2rem;
+  background-color: var(--main-features-color);
+  height: 2.4rem;
+  width: 2.4rem;
+  text-align: center;
+  color: #333;
+  border-radius: 50%;
+}
+
+@media (max-width: 100rem) {
+  .headerNavList a svg {
+    height: 52px;
+  }
+}
+
+@media (max-width: 80rem) {
+  .headerNavList a svg {
+    height: 44px;
+  }
+}
+
+@media (max-width: 42rem) {
+  .headerNavList a svg {
+    height: 32px;
+  }
+}

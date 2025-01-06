@@ -1,0 +1,9 @@
+.adminAddEmployeeContainer {
+  width: 50%;
+  margin-bottom: 6.4rem;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}

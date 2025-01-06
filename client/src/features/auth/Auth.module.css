@@ -1,0 +1,29 @@
+.switchAuth {
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+  color: #777;
+}
+
+.switchAuth a:link,
+.switchAuth a:visited {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.switchAuth a:hover,
+.switchAuth a:active {
+  color: var(--main-red);
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  font-size: 1.6rem;
+  padding-top: 0.4rem;
+  color: var(--main-red);
+}

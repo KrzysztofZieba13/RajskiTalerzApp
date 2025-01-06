@@ -1,0 +1,17 @@
+.chart {
+  margin-bottom: 8rem;
+}
+
+.chart > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.chart h2 {
+  font-size: 4.4rem;
+  font-weight: 300;
+  margin-bottom: 4.4rem;
+  color: var(--main-color);
+}

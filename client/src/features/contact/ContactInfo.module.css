@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contactInfo h2 {
+  font-size: 3.2rem;
+  font-family: "Rock Salt";
+  color: var(--main-color);
+  font-weight: normal;
+}
+
+.contactInfo p {
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.openHours {
+  width: fit-content;
+  color: #333;
+  font-size: 2.4rem;
+}
+
+.openHours li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3.2rem;
+}
+
+.contactBtns {
+  display: flex;
+  font-size: 2.4rem;
+  gap: 6.4rem;
+  margin-top: 3.2rem;
+}
+
+.contactBtns a:link,
+.contactBtns a:visited {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contactBtns a:link svg,
+.contactBtns a:visited svg {
+  height: 3.2rem;
+  fill: var(--main-color);
+  transition: all 0.3s;
+}
+
+.contactBtns a:hover svg,
+.contactBtns a:active svg {
+  fill: var(--main-features-color);
+}
+
+.contactBtns a:hover,
+.contactBtns a:active {
+  color: var(--main-features-color);
+}
+
+/*Below 864px*/
+@media (max-width: 54em) {
+  .contactInfo {
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}

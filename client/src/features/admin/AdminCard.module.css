@@ -1,0 +1,20 @@
+.adminCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #333;
+  border: 1px solid var(--main-color);
+  padding: 2.4rem;
+  border-radius: 13px;
+  transition: all 0.3s;
+  gap: 0.4rem;
+}
+
+.adminCard:hover {
+  box-shadow: 0 0 9px 3px rgba(33, 156, 144, 0.2);
+}
+
+.adminCard button {
+  align-self: center;
+  padding: 0 0.8rem;
+}

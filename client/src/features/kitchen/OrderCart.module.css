@@ -1,0 +1,13 @@
+.orderCart {
+  border: 1px solid var(--main-features-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.orderReady {
+  opacity: 60%;
+}

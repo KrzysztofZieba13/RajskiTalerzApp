@@ -1,0 +1,36 @@
+.whatsapp {
+  margin-top: 4.4rem;
+}
+
+.whatsapp a:link,
+.whatsapp a:visited {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--main-light-color);
+  text-decoration: none;
+  border-top: 2px solid var(--main-light-color);
+  padding-top: 2.4rem;
+}
+
+.whatsapp a:link span,
+.whatsapp a:visited span {
+  transition: all 0.3s;
+}
+
+.whatsapp a:hover span,
+.whatsapp a:active span {
+  color: var(--main-features-color);
+}
+
+.whatsapp a:link svg,
+.whatsapp a:visited svg {
+  height: 5.2rem;
+  fill: var(--main-light-color);
+  transition: all 0.3s;
+}
+
+.whatsapp a:hover svg,
+.whatsapp a:active svg {
+  fill: var(--main-features-color);
+}

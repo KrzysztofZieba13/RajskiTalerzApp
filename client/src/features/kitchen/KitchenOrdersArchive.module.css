@@ -1,0 +1,50 @@
+.selectAndSearch {
+  width: 70rem;
+  margin: 4.4rem auto 0 auto;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.datePicker {
+  display: flex;
+  font-size: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #777;
+  border-bottom: 1px solid #777;
+}
+
+.orderDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.orderDetails > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.accordions {
+  width: 80rem;
+  margin: 4.4rem auto 0 auto;
+  font-size: 2.4rem;
+}
+
+.accordionSummary {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 1.2rem;
+}
+
+.productList {
+  margin-top: 3.2rem;
+}
+
+.productListTitle {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}

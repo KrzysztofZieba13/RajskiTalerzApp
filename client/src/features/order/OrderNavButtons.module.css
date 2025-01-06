@@ -1,0 +1,12 @@
+.buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BELOW 720px */
+@media (max-width: 45em) {
+  .buttons {
+    margin-top: 5.2rem;
+  }
+}

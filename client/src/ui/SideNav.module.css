@@ -1,0 +1,68 @@
+.sideNav {
+  display: flex;
+  gap: 3.2rem;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+}
+
+.sideNav a:link,
+.sideNav a:visited {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #333;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.sideNav span {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+
+.sideNav svg {
+  fill: #333;
+  height: 6.4rem;
+}
+
+:global .active span {
+  width: 150px !important;
+}
+
+.sideNav :global .active svg,
+.sideNav :global .active span {
+  fill: var(--main-color);
+  color: var(--main-color);
+}
+
+/* BELOW 704px */
+@media (max-width: 44em) {
+  .sideNav {
+    grid-row: 2/3;
+    position: sticky;
+    height: 15rem;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    overflow: scroll;
+    background-color: var(--main-color);
+    z-index: 1000;
+    padding: 0 2.4rem;
+    margin-top: auto;
+  }
+
+  .sideNav svg {
+    fill: #333;
+  }
+
+  .sideNav :global .active svg,
+  .sideNav :global .active span {
+    fill: #fff;
+    color: #fff;
+  }
+}

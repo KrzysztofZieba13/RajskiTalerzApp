@@ -1,0 +1,18 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: var(--main-light-color);
+  padding: 19rem 3.2rem 8rem 3.2rem;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+
+/* BELOW 704px */
+@media (max-width: 44em) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    position: relative;
+    padding: 19rem 0 0 0;
+  }
+}

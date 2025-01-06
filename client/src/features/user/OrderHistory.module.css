@@ -1,0 +1,36 @@
+.orderHistory {
+  max-width: 60rem;
+  font-size: 2.4rem;
+  color: #333;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* BELOW 704px */
+@media (max-width: 44em) {
+  .orderHistory {
+    margin: 0 auto;
+    width: 60rem;
+  }
+}
+
+/* BELOW 512px */
+@media (max-width: 32em) {
+  .orderSummaryHeader {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .orderHistory {
+    width: 45rem;
+    font-size: 2.4rem;
+  }
+}
+
+/* BELOW 384px */
+@media (max-width: 24em) {
+  .orderHistory {
+    width: 40rem;
+  }
+}

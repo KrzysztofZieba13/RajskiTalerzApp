@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+
+:root {
+  --main-color: #219c90;
+  --main-color-gradient: #7ac4bc;
+  --main-light-color: #fffddd;
+  --main-features-color: #ffc700;
+  --main-red: #ee4e4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: Itim;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden !important;
+  background-color: var(--main-light-color);
+}
+
+@media (max-width: 65rem) {
+  html {
+    font-size: 50%;
+  }
+}

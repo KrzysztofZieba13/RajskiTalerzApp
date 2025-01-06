@@ -1,0 +1,19 @@
+.employeesToDelete {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.name {
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.role,
+.email {
+  font-size: 1.6rem;
+}
+
+.email {
+  margin-bottom: 2.4rem;
+}

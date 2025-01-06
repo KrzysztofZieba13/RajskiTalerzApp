@@ -1,0 +1,24 @@
+.waiterHeader {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.waiterHeader a:link,
+.waiterHeader a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.waiterHeader a:hover,
+.waiterHeader a:active {
+  color: var(--main-color);
+}
+
+.waiterHeader :global(a.active) {
+  color: var(--main-color);
+}

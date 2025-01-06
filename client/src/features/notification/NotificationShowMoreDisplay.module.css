@@ -1,0 +1,13 @@
+.showMore {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 0.8rem;
+  color: #777;
+}
+
+.showMore > button {
+  font-size: 1.6rem;
+}

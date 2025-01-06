@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  padding: 1.2rem 6.4rem;
+}
+
+.header img {
+  transition: all 0.3s;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a svg {
+  height: 60px;
+  color: #333;
+  transition: all 0.3s;
+}
+
+@media (max-width: 100rem) {
+  .logo {
+    height: 96px;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 80rem) {
+  .logo {
+    height: 80px;
+  }
+}
+
+/*BELOW 672px*/
+@media (max-width: 42rem) {
+  .logo {
+    height: 64px;
+  }
+}
+
+/*BELOW 672px*/
+@media (max-width: 42rem) {
+  .header {
+    padding: 1.2rem 3.2rem;
+  }
+}

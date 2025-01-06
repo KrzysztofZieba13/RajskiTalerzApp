@@ -1,0 +1,58 @@
+.mapDisplayContainer {
+  height: 608px;
+  width: 608px;
+  background-color: #ffc700;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 7px #5552;
+  position: relative;
+  z-index: 10;
+}
+
+.map {
+  border-radius: 1000px;
+  height: 600px;
+  width: 600px;
+  z-index: 10;
+  position: relative;
+}
+
+/*Below 1264px*/
+@media (max-width: 79em) {
+  .mapDisplayContainer {
+    height: 505px;
+    width: 505px;
+  }
+
+  .map {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+/*Below 976px*/
+@media (max-width: 61em) {
+  .mapDisplayContainer {
+    height: 404px;
+    width: 404px;
+  }
+
+  .map {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/*Below 576px*/
+@media (max-width: 36em) {
+  .mapDisplayContainer {
+    height: 304px;
+    width: 304px;
+  }
+  .map {
+    height: 300px;
+    width: 300px;
+  }
+}

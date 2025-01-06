@@ -1,0 +1,44 @@
+.deliveryContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 6.4rem;
+  width: 100%;
+}
+
+.deliveryContent > div {
+  width: 100%;
+}
+
+.sortedOrdersToDeliver {
+  width: 70rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  border-bottom: 3px solid var(--main-color);
+}
+
+.sortedOrdersToDeliverBtn:link,
+.sortedOrdersToDeliverBtn:visited {
+  display: flex;
+  font-size: 2.4rem;
+  color: #333;
+  gap: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 0.8rem 1.2rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.sortedOrdersToDeliverBtn:active,
+.sortedOrdersToDeliverBtn:hover {
+  background-color: var(--main-color);
+}
+
+.sortedOrdersToDeliver :global(a.active) {
+  background-color: var(--main-color);
+}
+
+.sortedOrdersToDeliverBtn > svg {
+  height: 3.2rem;
+}

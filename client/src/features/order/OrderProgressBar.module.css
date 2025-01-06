@@ -1,0 +1,61 @@
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.stepCircle {
+  background-color: transparent;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.stepCircleVisited {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.stepName {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: -50%;
+  text-wrap: nowrap;
+}
+
+.stepLine,
+.stepLineActive {
+  width: 15rem;
+  height: 1px;
+}
+
+.stepLineActive {
+  background-color: var(--main-color);
+}
+
+/* BELOW 576px */
+@media (max-width: 36em) {
+  .stepCircle {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.2rem;
+  }
+
+  .stepName {
+    font-size: 1.2rem;
+  }
+}

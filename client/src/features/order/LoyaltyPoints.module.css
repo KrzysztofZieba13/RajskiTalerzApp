@@ -1,0 +1,24 @@
+.loyaltyPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  color: #333;
+  align-items: center;
+}
+
+.loyaltyPoints button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding-bottom: 0.4rem;
+  color: var(--main-color);
+}
+
+.selectDiscount {
+  display: flex;
+  gap: 2.4rem;
+}

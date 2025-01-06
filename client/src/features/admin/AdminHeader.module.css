@@ -1,0 +1,24 @@
+.adminHeader {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.adminHeader a:link,
+.adminHeader a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #333;
+  transform: all 0.3s;
+}
+
+.adminHeader a:hover,
+.adminHeader a:active {
+  color: var(--main-color);
+}
+
+.adminHeader :global(a.active) {
+  color: var(--main-color);
+}

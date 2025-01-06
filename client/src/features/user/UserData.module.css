@@ -1,0 +1,13 @@
+.userData {
+  min-height: 70vh;
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* BELOW 704px */
+@media (max-width: 44em) {
+  .userData {
+    align-items: center;
+  }
+}

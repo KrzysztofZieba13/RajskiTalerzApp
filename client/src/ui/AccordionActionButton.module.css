@@ -1,0 +1,20 @@
+.button {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.2rem;
+  margin-right: 1.2rem;
+}
+
+.button:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: #219c9073;
+}

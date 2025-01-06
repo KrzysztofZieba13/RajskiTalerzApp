@@ -1,0 +1,6 @@
+.waiterBookings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.4rem 4.4rem;
+  gap: 6.4rem;
+}

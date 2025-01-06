@@ -1,0 +1,39 @@
+.deliveryAccordionsContainer {
+  max-width: 70rem;
+}
+
+.selectOrder {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.2rem;
+  margin-right: 1.2rem;
+}
+
+.selectOrder:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.selectOrder:disabled {
+  cursor: not-allowed;
+  color: #219c9073;
+}
+
+.linkToGoogleMaps:link,
+.linkToGoogleMaps:visited {
+  text-decoration: none;
+  color: var(--main-color);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+  padding-bottom: 0.2rem;
+}
+
+.linkToGoogleMaps:hover,
+.linkToGoogleMaps:active {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}

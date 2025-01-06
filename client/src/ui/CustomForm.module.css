@@ -1,0 +1,58 @@
+.customForm {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.customForm button {
+  align-self: flex-end;
+}
+
+.customForm > div {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #777;
+  display: flex;
+}
+
+.customForm label {
+  font-size: 2.4rem;
+  color: #777;
+  width: 50%;
+}
+
+.customForm input,
+.customForm textarea {
+  background-color: transparent;
+  border: none;
+  font-size: 2.4rem;
+  text-align: right;
+  color: #333;
+  font-family: inherit;
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  border-radius: 7px;
+  text-align: left;
+}
+
+.customForm textarea {
+  height: 10rem;
+}
+
+.customForm input:-webkit-autofill,
+.customForm textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--main-light-color) inset;
+}
+
+.customForm input:focus,
+.customForm textarea:focus {
+  background-color: #fff4556e;
+  outline: none;
+}
+
+.customForm select {
+  background-color: transparent;
+  border: none;
+  font-size: 2.4rem;
+  color: #333;
+  font-family: inherit;
+}

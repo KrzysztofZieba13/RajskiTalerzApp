@@ -1,0 +1,12 @@
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.datePicker {
+  display: flex;
+  font-size: 2.4rem;
+  /* align-items: center; */
+  color: #777;
+  border-bottom: 1px solid #777;
+}

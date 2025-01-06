@@ -1,0 +1,9 @@
+.newOrder {
+  padding: 19rem 3.2rem 8rem 3.2rem;
+  min-height: 80vh;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}

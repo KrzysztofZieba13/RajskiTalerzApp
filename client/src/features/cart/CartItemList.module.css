@@ -1,0 +1,14 @@
+.cartItems {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.totalPrice {
+  font-size: 2.4rem;
+  color: #333;
+  margin-top: 2.4rem;
+}

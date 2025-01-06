@@ -1,0 +1,13 @@
+.accordionDetailsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.accordionDetailsList > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}

@@ -1,0 +1,23 @@
+.contact {
+  background-color: #fffddd;
+  display: grid;
+  gap: 4.4rem;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 12.8rem 6.4rem;
+}
+
+/*Below 864px*/
+@media (max-width: 54em) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*BELOW 672px*/
+@media (max-width: 42rem) {
+  .contact {
+    padding: 12.8rem 3.2rem;
+  }
+}

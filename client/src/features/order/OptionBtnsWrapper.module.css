@@ -1,0 +1,13 @@
+.optionBtnsWrapper {
+  display: flex;
+  margin-bottom: 6.4rem;
+  gap: 3.2rem;
+}
+
+/* BELOW 720px */
+@media (max-width: 45em) {
+  .optionBtnsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

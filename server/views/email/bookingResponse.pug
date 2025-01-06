@@ -1,0 +1,16 @@
+extends baseEmail
+
+block content
+  #data
+    if data.booking.status === 'Zatwierdzono'
+      p Twoja rezerwacja została rozpatrzona pozytywnie! 😀
+      p Stolik: #{data.booking.guestsNumber}
+      p W dniu: #{data.bookingDate}
+    else
+      p Twoja rezerwacja została odrzucona 😥
+      p Stolik: #{data.booking.guestsNumber}
+      p W dniu: #{data.bookingDate}
+      
+    // Domyślna część wyświetlana w obu przypadkach
+    p Jeśli potrzebujesz pomocy, nie zastanawiaj się, skontaktuj się z nami!
+    p - Krzysztof Zięba, Szef restauracji

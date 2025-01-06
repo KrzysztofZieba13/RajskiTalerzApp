@@ -1,0 +1,15 @@
+.selectAndSearch {
+  width: 70rem;
+  margin: 4.4rem auto 0 auto;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.datePicker {
+  display: flex;
+  font-size: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #777;
+  border-bottom: 1px solid #777;
+}

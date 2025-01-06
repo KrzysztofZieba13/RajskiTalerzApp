@@ -1,0 +1,12 @@
+.cartButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+}
+
+/* BELOW 480px */
+@media (max-width: 30em) {
+  .cartButtons {
+    padding: 0 1.2rem;
+  }
+}

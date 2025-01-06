@@ -1,0 +1,10 @@
+.buttonUnderline {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  font-size: 2.4rem;
+  color: var(--main-color);
+  font-family: inherit;
+  cursor: pointer;
+  padding-bottom: 0.4rem;
+}

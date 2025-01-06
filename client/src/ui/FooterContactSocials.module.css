@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.socials a:link svg,
+.socials a:visited svg {
+  height: 3.2rem;
+  fill: var(--main-light-color);
+  transition: all 0.3s;
+}
+
+.socials a:hover svg,
+.socials a:active svg {
+  fill: var(--main-features-color);
+}

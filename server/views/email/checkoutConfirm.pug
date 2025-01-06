@@ -1,0 +1,27 @@
+extends baseEmail
+
+block content
+  p Witaj #{firstName},
+  p Twoje zamówienie id:(#{data.orderId}) oczekuje na płatność. 
+
+  table(border="1", cellpadding="10", cellspacing="0", width="100%")
+    thead
+      tr
+        th Nazwa produktu
+        th Ilość
+        th Cena za sztukę
+        th Cena całkowita
+    tbody
+      each item in data.products
+        tr
+          td #{item.product.name}
+          td #{item.quantity}
+          td #{item.product.price} zł
+          td #{(item.quantity * item.product.price).toFixed(2)} zł
+    tfoot
+      tr
+        td(colspan="3", align="right") Cena całkowita:
+        td #{data.totalPrice.toFixed(2)} zł
+
+  p Jeśli potrzebujesz pomocy, nie zastanawiaj się, skontaktuj się z nami!
+  p - Krzysztof Zięba, Szef restauracji

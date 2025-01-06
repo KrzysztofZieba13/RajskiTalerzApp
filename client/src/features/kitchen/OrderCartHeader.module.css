@@ -1,0 +1,60 @@
+.orderCartHeader {
+  background-color: var(--main-features-color);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  padding: 0.6rem;
+  position: relative;
+}
+
+.orderReadyForDelivery {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.orderReadyForDelivery:hover {
+  background-color: var(--main-color) !important;
+}
+
+.orderCartHeaderRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstRow {
+  font-size: 1.6rem;
+}
+
+.secondRow {
+  font-size: 1.4rem;
+}
+
+.counter {
+  align-self: center;
+  font-size: 1.6rem;
+}
+
+.orderReadyButton {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.4rem;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.orderCartHeader:hover .orderReadyButton {
+  opacity: 1;
+}

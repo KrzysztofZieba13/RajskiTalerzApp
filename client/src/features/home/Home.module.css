@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #219c90, #7ac4bc);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4.4rem;
+  padding: 3.2rem 6.4rem;
+}
+
+.home div p {
+  margin-top: 3.2rem;
+  margin-bottom: 6.4rem;
+}
+
+.home h1 {
+  font-size: 9.6rem;
+  color: #fffddd;
+  font-family: "Proza libre";
+  font-weight: 400;
+  z-index: 10;
+  line-height: 1;
+  position: relative;
+}
+
+.home p {
+  color: #fff;
+  font-size: 2.4rem;
+  z-index: 10;
+  position: relative;
+  line-height: 1.7;
+}
+
+.home img {
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 64px;
+}
+
+.buttons {
+  z-index: 10;
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 5.2rem;
+}
+
+.locationBtn:link,
+.locationBtn:visited {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.locationBtn:hover svg,
+.locationBtn:active svg {
+  transform: translateX(10px);
+}
+
+.locationBtn svg {
+  height: 2.4rem;
+  transition: all 0.3s;
+}
+
+@media (max-width: 100em) {
+  .home h1 {
+    font-size: 8rem;
+  }
+
+  .home p {
+    font-size: 1.6rem;
+  }
+
+  .home img {
+    height: 70%;
+  }
+}
+
+@media (max-width: 80em) {
+  .home {
+    gap: 2.4rem;
+  }
+
+  .home h1 {
+    font-size: 6.4rem;
+  }
+
+  .buttons {
+    margin-top: 2.4rem;
+  }
+
+  .home img {
+    height: 60%;
+    right: 24px;
+  }
+}
+
+@media (max-width: 65em) {
+  .home img {
+    height: 50%;
+    right: 16px;
+  }
+}
+
+/*BELOW 848px*/
+@media (max-width: 54em) {
+  .home {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 8rem;
+  }
+
+  .home img {
+    position: static;
+    width: 55%;
+    margin: 0 auto;
+    height: auto;
+    transform: translateY(0);
+  }
+
+  .home > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home div p {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/*BELOW 672px*/
+@media (max-width: 42em) {
+  .home {
+    padding-top: 8rem;
+  }
+
+  .home h1 {
+    font-size: 4.4rem;
+  }
+
+  .locationBtn:link,
+  .locationBtn:visited {
+    font-size: 2rem;
+  }
+
+  .locationBtn svg {
+    height: 2rem;
+  }
+}
+
+/*BELOW 432px*/
+@media (max-width: 27em) {
+  .home {
+    padding: 12.8rem 3.2rem 8rem 3.2rem;
+  }
+
+  .home h1 {
+    font-size: 3.8rem;
+  }
+}

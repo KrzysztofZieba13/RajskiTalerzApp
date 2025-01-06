@@ -1,0 +1,27 @@
+.footerNav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  justify-items: space-between;
+  gap: 3.2rem;
+}
+
+.footerNav li a:link,
+.footerNav li a:visited {
+  text-decoration: none;
+  color: var(--main-light-color);
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+.footerNav li a:hover,
+.footerNav li a:active {
+  color: var(--main-features-color);
+}
+
+/* BELOW 544px */
+@media (max-width: 34em) {
+  .footerNav {
+    grid-template-columns: 1fr;
+  }
+}

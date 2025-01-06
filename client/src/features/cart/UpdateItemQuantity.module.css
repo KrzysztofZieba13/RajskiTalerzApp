@@ -1,0 +1,11 @@
+.updateItemQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.updateItemQuantity span {
+  font-size: 2.4rem;
+  color: #333;
+}

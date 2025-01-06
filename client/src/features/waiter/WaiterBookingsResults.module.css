@@ -1,0 +1,33 @@
+.waiterBookingsResults {
+  box-shadow: 0 0 9px 5px rgba(77, 77, 77, 0.1);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  margin: 0 auto;
+}
+
+.resultsHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 2.4rem;
+  font-size: 2.4rem;
+  width: 100%;
+  justify-items: start;
+  padding: 2.4rem 1.2rem;
+  color: #333;
+  background-color: #ffc800;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.resultsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 1.4rem;
+  font-size: 2.4rem;
+  color: #333;
+  padding: 2rem 1.2rem;
+}
+
+.resultsRow:nth-child(odd) {
+  background-color: #ffc8003f;
+}

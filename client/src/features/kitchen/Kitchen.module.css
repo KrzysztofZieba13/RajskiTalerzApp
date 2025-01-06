@@ -1,0 +1,4 @@
+.kitchen {
+  border-bottom: 3.2rem solid var(--main-color);
+  min-height: 100vh;
+}
