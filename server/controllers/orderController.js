@@ -33,7 +33,6 @@ const createOrderCheckout = async (sessionId) => {
 };
 
 exports.webhook = (req, res) => {
-  console.log('FAIL');
   const sig = req.headers['stripe-signature'];
   let event;
 
@@ -45,8 +44,6 @@ exports.webhook = (req, res) => {
       .json({ status: 'success', message: `Webhook Error: ${err.message}` });
     return;
   }
-
-  console.log(event.type);
 
   if (event.type === 'checkout.session.completed') {
     const paymentIntentSucceeded = event.data.object;
@@ -61,7 +58,6 @@ exports.createCheckoutSession = catchAsync(async (req, res, next) => {
   const { products, clientData } = req.body;
 
   const orderProductsIDs = products.map((product) => product.itemId);
-  //find products in DB
   const productsFromDB = await Product.find({
     _id: { $in: orderProductsIDs },
   });

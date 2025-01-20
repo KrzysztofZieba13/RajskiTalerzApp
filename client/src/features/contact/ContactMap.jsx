@@ -1,5 +1,3 @@
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import styles from "./ContactMap.module.css";
 import MapDisplayContainer from "../../ui/MapDisplayContainer";
 
 function ContactMap() {

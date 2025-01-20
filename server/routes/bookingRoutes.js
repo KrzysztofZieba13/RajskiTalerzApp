@@ -4,23 +4,14 @@ const authController = require('../controllers/authController');
 
 const router = express.Router();
 
-router
-  .route('/')
-  .post(authController.protect, bookingController.sendBookingEmail)
-  .get(authController.protect, bookingController.getAllBookings);
+router.use(authController.protect);
+router.post('/', bookingController.sendBookingEmail);
+router.get('/myBookings', bookingController.getMyBookings);
+router.patch('/hideMyNotification/:id', bookingController.hideNotification);
 
-router.get(
-  '/myBookings',
-  authController.protect,
-  bookingController.getMyBookings,
-);
-
-router.patch('/:id', authController.protect, bookingController.updateBooking);
-
-router.patch(
-  '/hideMyNotification/:id',
-  authController.protect,
-  bookingController.hideNotification,
-);
+// Only for admin and waiter
+router.use(authController.restrictTo('admin', 'waiter'));
+router.get('/', bookingController.getAllBookings);
+router.patch('/:id', bookingController.updateBooking);
 
 module.exports = router;

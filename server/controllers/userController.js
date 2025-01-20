@@ -55,7 +55,6 @@ const filterObj = (obj, ...allowedFields) => {
 };
 
 exports.updateMe = catchAsync(async (req, res, next) => {
-  console.log(req.body);
   // ERROR when user try update password using this endpoint
   if (req.body.password || req.body.passwordConfirm)
     return next(

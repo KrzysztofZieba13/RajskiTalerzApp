@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-const fs = require('fs');
 const pug = require('pug');
 const { convert } = require('html-to-text');
 

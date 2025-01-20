@@ -37,7 +37,6 @@ const createSendToken = (user, statusCode, res) => {
 };
 
 exports.signup = catchAsync(async (req, res, next) => {
-  console.log('sginup');
   const newUser = await User.create({
     name: req.body.name,
     surname: req.body.surname,
@@ -91,7 +90,9 @@ exports.protect = catchAsync(async (req, res, next) => {
       new AppError('Użytkownik do którego należał token nie istnieje.', 401),
     );
 
-  // TODO: chceck if password was changed after the token was issued
+  if (currentUser.changedPasswordAfter(decoded.iat)) {
+    return next(new AppError('Użytkownik zmienił hasło.', 401));
+  }
 
   req.user = currentUser;
   next();
@@ -99,6 +100,7 @@ exports.protect = catchAsync(async (req, res, next) => {
 
 exports.isLoggedIn = catchAsync(async (req, res, next) => {
   // Sprawdzenie, czy istnieje token
+
   const token = req.cookies.jwt;
   if (!token) {
     return res.status(200).json({
@@ -155,13 +157,11 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
       new AppError('Nie ma użytkownika z takim adresem e-mail.', 404),
     );
 
-  console.log(user);
   const resetToken = user.createPasswordResetToken();
   await user.save({ validateModifiedOnly: true });
 
   try {
     const resetURL = `${req.protocol}://${process.env.BASE_URL}/auth/reset-password/${resetToken}`;
-    console.log(resetURL);
     await new Email(user, resetURL).sendPasswordReset();
 
     res

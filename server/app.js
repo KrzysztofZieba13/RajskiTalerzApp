@@ -6,7 +6,6 @@ const cors = require('cors');
 
 const globalErrorHandler = require('./controllers/errorController');
 const orderController = require('./controllers/orderController');
-const authController = require('./controllers/authController');
 const productRouter = require('./routes/productRoutes');
 const orderRouter = require('./routes/orderRoutes');
 const userRouter = require('./routes/userRoutes');

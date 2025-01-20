@@ -21,7 +21,7 @@ const deliverySchema = new mongoose.Schema({
   buildingNumber: Number,
   city: String,
   localNumber: Number,
-  postalCose: String,
+  postalCode: String,
   floor: Number,
   deliveryComment: String,
   coordinates: Object,

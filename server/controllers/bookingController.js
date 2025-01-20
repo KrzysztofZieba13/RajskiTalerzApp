@@ -22,7 +22,6 @@ exports.getMyBookings = catchAsync(async (req, res, next) => {
 });
 
 exports.sendBookingEmail = catchAsync(async (req, res, next) => {
-  console.log(req.body);
   if (!req.body.clientEmail) req.body.clientEmail = req.user.email;
   req.body.userId = req.user._id;
   const booking = await Booking.create(req.body);
@@ -48,27 +47,20 @@ exports.sendBookingEmail = catchAsync(async (req, res, next) => {
 });
 
 exports.updateBooking = catchAsync(async (req, res, next) => {
-  // Aktualizacja rezerwacji
   const booking = await Booking.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true,
   });
 
-  // Jeśli rezerwacja nie istnieje
   if (!booking) return next(new AppError('Nie znaleziono rezerwacji.', 404));
 
-  // Debugowanie statusu rezerwacji
-  console.log(booking.status);
-
-  // Formatowanie daty z walidacją
   const formattedBookingDate = dayjs(booking.bookingDate).isValid()
     ? dayjs(booking.bookingDate).format('DD-MM-YYYY HH:mm:ss')
     : 'Niepoprawna data';
 
-  // Wysyłanie e-maila
   await new Email(
     null,
-    '', // Domyślna treść lub szablon
+    '',
     {
       bookingId: booking._id,
       booking,
@@ -77,7 +69,6 @@ exports.updateBooking = catchAsync(async (req, res, next) => {
     booking.clientEmail,
   ).sendBookingResponse();
 
-  // Odpowiedź JSON
   res.status(200).json({
     status: 'success',
     data: {
@@ -88,4 +79,3 @@ exports.updateBooking = catchAsync(async (req, res, next) => {
 
 exports.hideNotification = factory.hideNotification(Booking);
 exports.getAllBookings = factory.getAll(Booking);
-// exports.updateBooking = factory.updateOne(Booking);

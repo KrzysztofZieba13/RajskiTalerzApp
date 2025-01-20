@@ -7,7 +7,9 @@ exports.getAll = (Model) =>
     const features = new APIFeatures(Model.find(), req.query).filter().sort();
     const doc = await features.query;
 
-    //TODO: Error handling
+    if (!doc) {
+      return next(new AppError('Nie znaleziono dokumentów', 404));
+    }
 
     res.status(200).json({
       status: 'success',
@@ -20,7 +22,11 @@ exports.getOne = (Model) =>
   catchAsync(async (req, res) => {
     const doc = await Model.findById(req.params.id);
 
-    //TODO: Error handling
+    if (!doc) {
+      return next(
+        new AppError('Nie znaleziono dokumentu o podanym identyfikatorze', 404),
+      );
+    }
 
     res.status(200).json({
       status: 'success',
@@ -33,7 +39,9 @@ exports.createOne = (Model) =>
     if (req.user) req.body.userId = req.user._id;
     const doc = await Model.create(req.body);
 
-    //TODO: Error handling
+    if (!doc) {
+      return next(new AppError('Nie udało się utworzyć dokumentu', 400));
+    }
 
     res.status(201).json({
       status: 'success',
@@ -50,7 +58,12 @@ exports.updateOne = (Model) =>
       runValidators: true,
     });
 
-    //TODO: Error handling
+    if (!doc) {
+      return next(
+        new AppError('Nie znaleziono dokumentu o podanym identyfikatorze', 404),
+      );
+    }
+
     res.status(200).json({
       status: 'success',
       data: {
