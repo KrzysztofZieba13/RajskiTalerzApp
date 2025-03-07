@@ -1,6 +1,6 @@
 # MERN Stack Application
 
-This is a full-stack web application built using the **MERN** stack (**MongoDB, Express.js, React.js, Node.js**). The application provides functionalities for managing online and in-place orders, user accounts, and table bookings.
+This is a full-stack web application built using the **MERN** stack (**MongoDB, Express.js, React.js, Node.js**). The application provides functionalities for managing online and in-place orders, user accounts, and table bookings. Notifications to the user are sent to his email.
 
 ## Features
 - Online order placement
